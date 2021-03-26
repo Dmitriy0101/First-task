@@ -6,173 +6,703 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>First task</title>
     <link rel="stylesheet" href="css/nullstyle.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/cards.css" />
+    <link rel="stylesheet" href="css/footer.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <div class="cards">
-      <div class="cards__slider">
+    <div class="header__content">
+      <div class="content">
         <div class="container">
-          <div class="test-product">
-            <div class="product__title">Тестовые товары</div>
-            <div class="cards__block">
-              <div class="cards__item">
-                <div class="cards__top">
-                  <a class="top" href="">top</a>
-                  <a href=""><img class="favor" src="img/Fav.svg" alt="" /> </a>
-                </div>
-                <a class="prod-link" href="">
-                  <img class="prod" src="img/02.svg" alt="" />
-                </a>
+          <div class="tabs">
+            <div class="tabs__nav">
+              <a class="tabs__link tabs__link_active" href="#content-1"
+                >Всё о товаре</a
+              >
+              <a class="tabs__link" href="#content-2">Описание</a>
+              <a class="tabs__link" href="#content-3">Характеристики</a>
+              <a class="tabs__link" href="#content-4"
+                >Отзывы <span class="tabs__link-text">32</span></a
+              >
+            </div>
+            <div class="tabs__content">
+              <div class="tabs__pane tabs__pane_show" id="content-1">
+                <div class="cnt">
+                  <div class="product">
+                    <div class="product__left">
+                      <div class="card__item__block-img">
+                        <div class="slider-for">
+                          <img src="img/product/product.png" alt="img" />
+                          <img src="img/product/product2.png" alt="img" />
+                          <img src="img/product/product3.png" alt="img" />
+                          <img src="img/product/product4.png" alt="img" />
+                          <img src="img/product/product2.png" alt="img" />
+                          <img src="img/product/product4.png" alt="img" />
+                        </div>
+                        <div class="card__item-slider-wrapp">
+                          <div class="card__item-slider slider-nav">
+                            <div class="card__item-slider_element-wrapp">
+                              <div class="card__item-slider_element">
+                                <img src="img/product/product1.png" alt="" />
+                              </div>
+                            </div>
+                            <div class="card__item-slider_element-wrapp">
+                              <div class="card__item-slider_element">
+                                <img src="img/product/product2.png" alt="" />
+                              </div>
+                            </div>
+                            <div class="card__item-slider_element-wrapp">
+                              <div class="card__item-slider_element">
+                                <img src="img/product/product3.png" alt="" />
+                              </div>
+                            </div>
+                            <div class="card__item-slider_element-wrapp">
+                              <div class="card__item-slider_element">
+                                <img src="img/product/product4.png" alt="" />
+                              </div>
+                            </div>
+                            <div class="card__item-slider_element-wrapp">
+                              <div class="card__item-slider_element">
+                                <img src="img/product/product2.png" alt="" />
+                              </div>
+                            </div>
+                            <div class="card__item-slider_element-wrapp">
+                              <div class="card__item-slider_element">
+                                <img src="img/product/product4.png" alt="" />
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card__charac">
+                        <div class="card__charac-title">
+                          Характеристики
+                          <span>Картридж турбины Mercedes E-klasse</span>
+                        </div>
+                        <div class="characteristics-full__list">
+                          <div class="card__characteristics-full__item">
+                            <dt class="characteristics-full__label">
+                              <span>Тип</span>
+                            </dt>
+                            <dd class="characteristics-full__value">
+                              <ul class="characteristics-full__sub-list">
+                                <li>
+                                  <a href="">Группа 1</a>
+                                </li>
+                              </ul>
+                            </dd>
+                          </div>
+                          <div class="card__characteristics-full__item">
+                            <dt class="characteristics-full__label">
+                              <span>Номер</span>
+                            </dt>
+                            <dd class="characteristics-full__value">
+                              <ul class="characteristics-full__sub-list">
+                                <li>
+                                  <a href="">B40-2-210</a>
+                                </li>
+                              </ul>
+                            </dd>
+                          </div>
+                          <div class="card__characteristics-full__item">
+                            <dt class="characteristics-full__label">
+                              <span>Бренд</span>
+                            </dt>
+                            <dd class="characteristics-full__value">
+                              <ul class="characteristics-full__sub-list">
+                                <li>
+                                  <a href="">TurboParts</a>
+                                </li>
+                              </ul>
+                            </dd>
+                          </div>
+                        </div>
+                        <div class="full__characteristics">
+                          <a href="#">Все характеристики</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="product__right">
+                      <div class="product__tov">
+                        <div class="product__status">
+                          <img src="img/check.svg" alt="" />
+                          <span>В наличии</span>
+                        </div>
+                        <div class="product__rating">
+                          <img src="img/star.svg" alt="" />
+                          <img src="img/stararr.svg" alt="" />
+                          <span>32</span>
+                        </div>
+                        <span class="product__to-articul">Артикул: 100500</span>
+                      </div>
+                      <div class="product__trade">
+                        <div class="product__promotions">
+                          <a class="product__act" href="">Акция</a>
+                          <span class="product__discounts" href=""
+                            >До 30 марта скидка — 20% на все турбокомпрессоры
+                            <br />
+                            бренда TurboParts</span
+                          >
+                        </div>
+                        <div class="product__price">
+                          <span class="product__price-big">3 799 ₴</span>
+                          <span class="product__price-small">4 200 ₴ </span>
+                        </div>
+                        <div class="product-buttons">
+                          <button class="product-buttons__item">
+                            <span class="product__buttons-basket"
+                              >В корзину</span
+                            >
+                            <img
+                              class="product__buttons-basket_img"
+                              src="img/product__buttons/basket.svg"
+                              alt=""
+                            />
+                          </button>
+                          <button class="product-buttons__items">
+                            <img
+                              class="product-buttons-compare"
+                              src="img/product__buttons/compare.svg"
+                              alt=""
+                            />
+                          </button>
+                          <button class="product-buttons__items">
+                            <img
+                              class="product-buttons-fav"
+                              src="img/Fav.svg"
+                              alt=""
+                            />
+                          </button>
+                          <button class="product-buttons__itm">
+                            <!-- <img class="product-buttons-img" src="img/product__buttons/one_click.svg"  -->
+                            <!-- alt=""> -->
+                            <span class="product__buttons-one_click"
+                              >Купить в <br />
+                              1 клик</span
+                            >
+                          </button>
+                        </div>
+                      </div>
+                      <div class="product__accordion">
+                        <button class="accordion">
+                          <img
+                            class="accordion__img"
+                            src="img/accordion/surface1.png"
+                            alt=""
+                          />
+                          Гарантия
+                        </button>
+                        <div class="panel">
+                          <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing
+                            elit, sed do eiusmod tempor incididunt ut labore et
+                            dolore magna aliqua. Ut enim ad minim veniam, quis
+                            nostrud exercitation ullamco laboris nisi ut aliquip
+                            ex ea commodo consequat.
+                          </p>
+                        </div>
 
-                <div class="cards__users">
-                  <img src="img/star.svg" alt="" />
-                  <img src="img/stararr.svg" alt="" />
-                  <span>3</span>
-                </div>
+                        <button class="accordion">
+                          <img
+                            class="accordion__img"
+                            src="img/accordion/delivery.png"
+                            alt=""
+                          />
+                          Условия доставки
+                        </button>
+                        <div class="panel">
+                          <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing
+                            elit, sed do eiusmod tempor incididunt ut labore et
+                            dolore magna aliqua. Ut enim ad minim veniam, quis
+                            nostrud exercitation ullamco laboris nisi ut aliquip
+                            ex ea commodo consequat.
+                          </p>
+                        </div>
 
-                <div class="cards__info info">
-                  <span>Group</span> <br />
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit
-                  consectetur adipiscing elit
-                </div>
-
-                <div class="cards__action">
-                  <div class="card__cost">3 799<span>&#8372;</span></div>
-                  <div class="card__check">
-                    <!-- <img src="img/check.svg" alt=""> -->
-                    <span>В наличии</span>
+                        <button class="accordion">
+                          <img
+                            class="accordion__img"
+                            src="img/accordion/credits.png"
+                            alt=""
+                          />
+                          Условия оплаты
+                        </button>
+                        <div class="panel">
+                          <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing
+                            elit, sed do eiusmod tempor incididunt ut labore et
+                            dolore magna aliqua. Ut enim ad minim veniam, quis
+                            nostrud exercitation ullamco laboris nisi ut aliquip
+                            ex ea commodo consequat.
+                          </p>
+                        </div>
+                      </div>
+                      <div class="product__opinion">
+                        <div class="product__opinion-tittle">
+                          <div class="product__opinion-t">
+                            Отзывы покупателей <span>32</span>
+                          </div>
+                          <button class="opinion">Все отзывы</button>
+                        </div>
+                        <div
+                          class="product__opinion-content opinion-content opinion-bottom"
+                        >
+                          <div class="opinion-content__title">
+                            <div class="opinion-content__name">
+                              Плахова Карина <span>/ 21 мая 2020</span>
+                            </div>
+                            <div class="opinion-content__rating">
+                              <img src="img/star.png" alt="" />
+                              <img src="img/star.png" alt="" />
+                              <img src="img/star.png" alt="" />
+                              <img src="img/star.png" alt="" />
+                              <img src="img/starst.png" alt="" />
+                            </div>
+                          </div>
+                          <div class="opinion-content__comment">
+                            Покупка этой турбины была спонтанной и
+                            незапланированной. В течении часа прочитала отзывы и
+                            остановилась на этой модельке. Изначально знала, что
+                            пластины не сьемные, но плюсов было больше. Спасибо
+                            за молниеносную отправку! 2 дня с момента заказа и
+                            единственный нюанс-все таки сьемные пластины
+                            удобнее, наверное. Но по советам более опытных я
+                            ставила пергамент, но мыть все равно сложновато.
+                          </div>
+                        </div>
+                        <div class="product__opinion-content opinion-content">
+                          <div class="opinion-content__title">
+                            <div class="opinion-content__name">
+                              Рогозин Тимур <span>/ 17 мая 2020</span>
+                            </div>
+                            <div class="opinion-content__rating">
+                              <img src="img/star.png" alt="" />
+                              <img src="img/star.png" alt="" />
+                              <img src="img/starst.png" alt="" />
+                              <img src="img/starst.png" alt="" />
+                              <img src="img/starst.png" alt="" />
+                            </div>
+                          </div>
+                          <div class="opinion-content__comment">
+                            Покупка этой турбины была спонтанной и
+                            незапланированной. В течении часа прочитала отзывы и
+                            остановилась на этой модельке. Изначально знала, что
+                            пластины не сьемные, но плюсов было больше. Спасибо
+                            за молниеносную отправку!
+                          </div>
+                        </div>
+                        <button class="product__opinion-still">
+                          Показать еще
+                        </button>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
-              <div class="cards__item">
-                <div class="cards__top">
-                  <a class="new" href="">new</a>
-                  <a href=""><img class="favor" src="img/Fav.svg" alt="" /> </a>
-                </div>
-                <a class="prod-link" href="">
-                  <img class="prod" src="img/02.svg" alt="" />
-                </a>
 
-                <div class="cards__users">
-                  <img src="img/star.svg" alt="" />
-                  <img src="img/stararr.svg" alt="" />
-                  <span>44</span>
-                </div>
-
-                <div class="cards__info">
-                  <span>Group</span> <br />
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit
-                </div>
-
-                <div class="cards__action">
-                  <div class="card__cost">711<span>&#8372;</span></div>
-                  <div class="card__check">
-                    <!-- <img src="img/check.svg" alt=""> -->
-                    <span>В наличии</span>
-                  </div>
-                </div>
-              </div>
-              <div class="cards__item">
-                <div class="cards__top">
-                  <a class="top" href="">top</a>
-                  <a href=""><img class="favor" src="img/Fav.svg" alt="" /> </a>
-                </div>
-                <a class="prod-link" href="">
-                  <img class="prod" src="img/03.svg" alt="" />
-                </a>
-
-                <div class="cards__users">
-                  <img src="img/star.svg" alt="" />
-                  <img src="img/stararr.svg" alt="" />
-                  <span>11</span>
-                </div>
-
-                <div class="cards__info">
-                  <span>Group</span> <br />
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit
-                </div>
-
-                <div class="cards__action">
-                  <div class="card__cost">22 105<span>&#8372;</span></div>
-                  <div class="card__check">
-                    <!-- <img src="img/check.svg" alt=""> -->
-                    <span>В наличии</span>
-                  </div>
-                </div>
-              </div>
-              <div class="cards__item">
-                <div class="cards__top top-card">
-                  <a class="top" href="">top</a>
-                  <a href=""><img class="favor" src="img/Fav.svg" alt="" /> </a>
-                </div>
-                <a class="prod-link" href="">
-                  <img class="prod top-prod" src="img/02.svg" alt="" />
-                </a>
-
-                <div class="cards__users">
-                  <img src="img/star.svg" alt="" />
-                  <img src="img/stararr.svg" alt="" />
-                  <span>76</span>
-                </div>
-
-                <div class="cards__info">
-                  <span>Group</span> <br />
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit
-                </div>
-
-                <div class="cards__action">
-                  <div class="card__cost">158<span>&#8372;</span></div>
-                  <div class="card__check">
-                    <!-- <img src="img/check.svg" alt=""> -->
-                    <span>В наличии</span>
-                  </div>
-                </div>
-              </div>
-              <div class="cards__item">
-                <div class="cards__top">
-                  <a class="new" href="">new</a>
-                  <a href=""><img class="favor" src="img/Fav.svg" alt="" /> </a>
-                </div>
-                <a class="prod-link" href="">
-                  <img class="prod" src="img/02.svg" alt="" />
-                </a>
-
-                <div class="cards__users">
-                  <img src="img/star.svg" alt="" />
-                  <img src="img/stararr.svg" alt="" />
-                  <span>2</span>
-                </div>
-
-                <div class="cards__info">
-                  <span>Group</span> <br />
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit
-                </div>
-
-                <div class="cards__action">
-                  <div class="card__cost">1 000<span>&#8372;</span></div>
-                  <div class="card__check">
-                    <!-- <img src="img/check.svg" alt=""> -->
-                    <span>В наличии</span>
-                  </div>
-                </div>
-              </div>
+              <div class="tabs__pane" id="content-2">Содержимое 2...</div>
+              <div class="tabs__pane" id="content-3">Содержимое 3...</div>
+              <div class="tabs__pane" id="content-4">Содержимое 4...</div>
             </div>
           </div>
         </div>
       </div>
-      <div class="group">
-        <a class="arrow arrow-left" href=""></a>
-        <a class="group__number" href="">1</a>
-        <a class="group__number" href="">2</a>
-        <a class="group__number" href="">3</a>
-        <a class="group__number" href="">4</a>
-        <a class="group__number" href="">5</a>
-        <a class="arrow arrow-right" href=""></a>
+    </div>
+    <div class="cards">
+      <div class="container">
+        <div class="test-product">
+          <div class="product__title">Тестовые товары</div>
+          <div class="cards__block">
+            <div class="cards__item">
+              <div class="cards__top">
+                <a class="top" href="">top</a>
+                <a href=""><img class="favor" src="img/Fav.svg" alt="" /> </a>
+              </div>
+              <a class="prod-link" href="">
+                <img class="prod" src="img/02.svg" alt="" />
+              </a>
+
+              <div class="cards__users">
+                <img src="img/star.svg" alt="" />
+                <img src="img/stararr.svg" alt="" />
+                <span>3</span>
+              </div>
+
+              <div class="cards__info info">
+                <span>Group</span> <br />
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                consectetur adipiscing elit
+              </div>
+
+              <div class="cards__action">
+                <div class="card__cost">3 799<span>&#8372;</span></div>
+                <div class="card__check">
+                  <!-- <img src="img/check.svg" alt=""> -->
+                  <span>В наличии</span>
+                </div>
+              </div>
+            </div>
+            <div class="cards__item">
+              <div class="cards__top">
+                <a class="new" href="">new</a>
+                <a href=""><img class="favor" src="img/Fav.svg" alt="" /> </a>
+              </div>
+              <a class="prod-link" href="">
+                <img class="prod" src="img/02.svg" alt="" />
+              </a>
+
+              <div class="cards__users">
+                <img src="img/star.svg" alt="" />
+                <img src="img/stararr.svg" alt="" />
+                <span>44</span>
+              </div>
+
+              <div class="cards__info">
+                <span>Group</span> <br />
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit
+              </div>
+
+              <div class="cards__action">
+                <div class="card__cost">711<span>&#8372;</span></div>
+                <div class="card__check">
+                  <!-- <img src="img/check.svg" alt=""> -->
+                  <span>В наличии</span>
+                </div>
+              </div>
+            </div>
+            <div class="cards__item">
+              <div class="cards__top">
+                <a class="top" href="">top</a>
+                <a href=""><img class="favor" src="img/Fav.svg" alt="" /> </a>
+              </div>
+              <a class="prod-link" href="">
+                <img class="prod" src="img/03.svg" alt="" />
+              </a>
+
+              <div class="cards__users">
+                <img src="img/star.svg" alt="" />
+                <img src="img/stararr.svg" alt="" />
+                <span>11</span>
+              </div>
+
+              <div class="cards__info">
+                <span>Group</span> <br />
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit
+              </div>
+
+              <div class="cards__action">
+                <div class="card__cost">22 105<span>&#8372;</span></div>
+                <div class="card__check">
+                  <!-- <img src="img/check.svg" alt=""> -->
+                  <span>В наличии</span>
+                </div>
+              </div>
+            </div>
+            <div class="cards__item">
+              <div class="cards__top">
+                <a href=""></a>
+                <a href=""><img class="favor" src="img/Fav.svg" alt="" /> </a>
+              </div>
+              <a class="prod-link" href="">
+                <img class="prod" src="img/02.svg" alt="" />
+              </a>
+              <div class="cards__users">
+                <img src="img/star.svg" alt="" />
+                <img src="img/stararr.svg" alt="" />
+                <span>44</span>
+              </div>
+              <div class="cards__info">
+                <span>Group</span> <br />
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit
+              </div>
+              <div class="cards__action">
+                <div class="card__cost">711<span>&#8372;</span></div>
+                <div class="card__check">
+                  <!-- <img src="img/check.svg" alt=""> -->
+                  <span>В наличии</span>
+                </div>
+              </div>
+            </div>
+            <div class="cards__item">
+              <div class="cards__top">
+                <a class="new" href="">new</a>
+                <a href=""><img class="favor" src="img/Fav.svg" alt="" /> </a>
+              </div>
+              <a class="prod-link" href="">
+                <img class="prod" src="img/02.svg" alt="" />
+              </a>
+
+              <div class="cards__users">
+                <img src="img/star.svg" alt="" />
+                <img src="img/stararr.svg" alt="" />
+                <span>2</span>
+              </div>
+
+              <div class="cards__info">
+                <span>Group</span> <br />
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit
+              </div>
+
+              <div class="cards__action">
+                <div class="card__cost">1 000<span>&#8372;</span></div>
+                <div class="card__check">
+                  <!-- <img src="img/check.svg" alt=""> -->
+                  <span>В наличии</span>
+                </div>
+              </div>
+            </div>
+            <div class="cards__item">
+              <div class="cards__top">
+                <a class="top" href="">top</a>
+                <a href=""><img class="favor" src="img/Fav.svg" alt="" /> </a>
+              </div>
+              <a class="prod-link" href="">
+                <img class="prod" src="img/02.svg" alt="" />
+              </a>
+              <div class="cards__users">
+                <img src="img/star.svg" alt="" />
+                <img src="img/stararr.svg" alt="" />
+                <span>3</span>
+              </div>
+              <div class="cards__info info">
+                <span>Group</span> <br />
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                consectetur adipiscing elit
+              </div>
+              <div class="cards__action">
+                <div class="card__cost">3 799<span>&#8372;</span></div>
+                <div class="card__check">
+                  <!-- <img src="img/check.svg" alt=""> -->
+                  <span>В наличии</span>
+                </div>
+              </div>
+            </div>
+            <div class="cards__item">
+              <div class="cards__top">
+                <a class="new" href="">new</a>
+                <a href=""><img class="favor" src="img/Fav.svg" alt="" /> </a>
+              </div>
+              <a class="prod-link" href="">
+                <img class="prod" src="img/02.svg" alt="" />
+              </a>
+              <div class="cards__users">
+                <img src="img/star.svg" alt="" />
+                <img src="img/stararr.svg" alt="" />
+                <span>2</span>
+              </div>
+              <div class="cards__info">
+                <span>Group</span> <br />
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit
+              </div>
+              <div class="cards__action">
+                <div class="card__cost">1 000<span>&#8372;</span></div>
+                <div class="card__check">
+                  <!-- <img src="img/check.svg" alt=""> -->
+                  <span>В наличии</span>
+                </div>
+              </div>
+            </div>
+            <div class="cards__item">
+              <div class="cards__top">
+                <a class="new" href="">new</a>
+                <a href=""><img class="favor" src="img/Fav.svg" alt="" /> </a>
+              </div>
+              <a class="prod-link" href="">
+                <img class="prod" src="img/02.svg" alt="" />
+              </a>
+              <div class="cards__users">
+                <img src="img/star.svg" alt="" />
+                <img src="img/stararr.svg" alt="" />
+                <span>2</span>
+              </div>
+              <div class="cards__info">
+                <span>Group</span> <br />
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit
+              </div>
+              <div class="cards__action">
+                <div class="card__cost">1 000<span>&#8372;</span></div>
+                <div class="card__check">
+                  <!-- <img src="img/check.svg" alt=""> -->
+                  <span>В наличии</span>
+                </div>
+              </div>
+            </div>
+            
+          
+          
+          </div>
+          <div class="cards__subscribe">
+            <div class="cards__subscribe-title">
+              Нужна помощь в подборе товара? Мы перезваниваем !
+            </div>
+            <div class="cards__subscribe-content">
+              <input placeholder="+38 (0xx) xx - xx - xxx" />
+              <button class="cards__subscribe-button">
+                <span>Отправить</span>
+              </button>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
+  
+  
+    <!---------------------- FOOTER ------------------------------->
+    <footer class="footer">
+      <div class="footer__container">
+        <div class="footer__block">
+          <div class="footer__data">
+            <div class="footer__subscribe">
+              <div class="footer__subscribe-title">
+                <img src="img/icon/wezom_logo.png" alt="" />
+              </div>
+              <ul class="footer__social-list">
+                <li class="social-list__item">
+                  <a href="https://www.instagram.com/"
+                    ><img src="./img/icon/instagram.png" alt=""
+                  /></a>
+                </li>
+                <li class="social-list__item">
+                  <a href="https://www.facebook.com/"
+                    ><img src="./img/icon/facebook.png" alt=""
+                  /></a>
+                </li>
+                <li class="social-list__item">
+                  <a href="https://twitter.com/?lang=ru"
+                    ><img src="./img/icon/twitter.png" alt=""
+                  /></a>
+                </li>
+                <li class="social-list__item">
+                  <a href="https://www.youtube.com/"
+                    ><img src="./img/icon/youtube.png" alt=""
+                  /></a>
+                </li>
+              </ul>
+              <div class="footer__info">
+                <div class="info__mail">
+                  <img src="img/icon/mail.png" alt="" />
+                </div>
+                <div class="footer-payments">
+                  <button class="payments-buttons">
+                    <img src="img/icon/visa.png" alt="" />
+                  </button>
+                  <button class="payments-buttons">
+                    <img src="img/icon/mastercard.png" alt="" />
+                  </button>
+                  <button class="payments-buttons">
+                    <img src="img/icon/maestra.png" alt="" />
+                  </button>
+                  <button class="payments-buttons">
+                    <img src="img/icon/paypal.png" alt="" />
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="footer-top__item">
+              <ul class="footer-links">
+                <li class="footer-links__item footer-links__item--heading">
+                  <h3>Группа 1</h3>
+                </li>
+                <li class="footer-links__item">
+                  <a href="">Ноутбуки</a>
+                </li>
+                <li class="footer-links__item">
+                  <a href="">Планшеты</a>
+                </li>
+                <li class="footer-links__item">
+                  <a href="">Аксессуары для планшетов <br> и электронных книг</a>
+                </li>
+                <li class="footer-links__item">
+                  <a href="">Кабели и переходники</a>
+                </li>
+                <li class="footer-links__item">
+                  <a href="">Сумки для ноутбуков</a>
+                </li>
+                <li class="footer-links__item">
+                  <a href="">Автотовары</a>
+                </li>
+                <li class="footer-links__item">
+                  <a href="">Сантехника</a>
+                </li>
+                <li class="footer-links__item">
+                  <a href="">Ремонт</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer-top__item">
+              <ul class="footer-links">
+                <li class="footer-links__item footer-links__item--heading">
+                  <h3>Группа 2</h3>
+                </li>
+                <li class="footer-links__item">
+                  <a href="">Политика конфиденциальности</a>
+                </li>
+                <li class="footer-links__item">
+                  <a href=""> 
+                    Доставка и оплата</a>
+                </li>
+                <li class="footer-links__item">
+                  <a href="">Способы оплаты</a>
+                </li>
+                <li class="footer-links__item">
+                  <a href="">Гарантия</a>
+                </li>
+                <li class="footer-links__item">
+                  <a href="">Контакты</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer-top__item">
+              <ul class="footer-links">
+                <li class="footer-links__item footer-links__item--heading">
+                  <h3>Горячая линия</h3>
+                </li>
+                <li class="footer-links__ite1">
+                  <a href="tel:0800000000">0 800 000 000</a>
+                </li>
+                <li class="footer-links__ite">
+                  <a href="tel:+38068000000"> 
+                    +38 068 000 00 00</a>
+                </li>
+                <li class="footer-links__ite">
+                  <a href="tel:+380990000000">+38 099 000 00 00</a>
+                </li>
+                <li class="footer-links__ite">
+                  <a href="tel:+380960000000">+38 096 000 00 00</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer__add-links">
+            <div class="add-links">
+            <div class="add-links__left">
+              <span>2021 © Wezom Practice</span>
+            </div>
+            <div class="add-links__right">
+              <span>Разработка \\ Wezom</span>
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  
+    <!-- Подключаем JQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Подключаем слайдер Slick -->
+    <script src="js/slick.min.js"></script>
+    <!-- Подключаем файл скриптов -->
+    <script src="js/script.js"></script>
+    <!-- Подключаем файл с акордионом -->
+    <script src="js/accordion.js"></script>
   </body>
 </html>
